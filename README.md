@@ -60,7 +60,7 @@ This open-source project is designed to showcase geospatial data engineering ski
 ## 📁 Project Structure
 
 ```plaintext
-ais-vessel-proximity-detection-map-aegean-sea/
+AIS-Vessel-Proximity-Detection-Map-Aegean-Sea/
 │
 ├── data/                           # 📁 Raw synthetic datasets
 │   ├── vessel_positions.csv
