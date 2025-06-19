@@ -1,2 +1,7 @@
 pandas>=1.5
 folium>=0.14
+matplotlib>=3.5
+imageio>=2.9
+geopandas>=0.12
+shapely>=1.8
+contextily>=1.2
