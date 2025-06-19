@@ -15,13 +15,14 @@ This open-source project is designed to showcase geospatial data engineering ski
 
 ## 📌 Features
 
-- 🗺️ Interactive folium map displaying vessel paths across the Aegean Sea
-- 🎨 Randomized color-coded trajectories for visual vessel separation
-- 🔴 Proximity events marked with exclamation-triangle icons
-- 🕒 Timestamps included for each vessel position (converted from UNIX epoch)
-- ⚓ Minimalistic base map using CartoDB Positron tiles for clarity
-- 💡 Lightweight route dots (not markers) for scalability and performance
-- 📁 All routes exported to a single `HTML` map, fully interactive offline
+- 🗺️ **Interactive folium map** displaying vessel paths across the Aegean Sea
+- 🎨 **Randomized color-coded trajectories** for visual vessel separation
+- 🔴 **Proximity events** marked with exclamation-triangle icons
+- 🕒 **Timestamps** included for each vessel position (converted from UNIX epoch)
+- ⚓ **Minimalistic base map** using CartoDB Positron tiles for clarity
+- 💡 **Lightweight route dots** (not markers) for scalability and performance
+- 📁 **All routes** exported to a single `HTML` map, fully interactive offline
+- 🎞️ **Animated proximity event GIF** showing vessel trajectories, collision course, and timestamps
 
 ![Maritime Collision Visualizer](images/screenshot_proximity_event_1.png)
 
@@ -55,6 +56,7 @@ This open-source project is designed to showcase geospatial data engineering ski
 
 237 simulated unintended proximity events
 
+![Maritime Collision Visualizer](images/vessels_11_12_proximity.gif)
 ---
 
 ## 📁 Project Structure
@@ -62,31 +64,35 @@ This open-source project is designed to showcase geospatial data engineering ski
 ```plaintext
 AIS-Vessel-Proximity-Detection-Map-Aegean-Sea/
 │
-├── data/                           # 📁 Raw synthetic datasets
-│   ├── vessel_positions.csv
-│   └── simulated_vessel_proximity_events.csv
+├── data/                               # 📁 Raw synthetic datasets
+│   ├── vessel_positions.csv                   # 📊 Vessel position data
+│   └── simulated_vessel_proximity_events.csv  # 📊 Simulated proximity event data
 │
-├── images/                         # 📁 Screenshots of proximity event map
-│   ├── screenshot_proximity_event_1.png
-│   ├── screenshot_proximity_event_2.png
-│   └── screenshot_proximity_events.png
+├── images/                             # 📁 Screenshots and GIFs for visualizations
+│   ├── screenshot_proximity_event_1.png  # 📸 Screenshot 1 of proximity event map
+│   ├── screenshot_proximity_event_2.png  # 📸 Screenshot 2 of proximity event map
+│   ├── screenshot_proximity_events.png   # 📸 Screenshot of multiple proximity events
+│   └── vessels_11_12_proximity.gif       # 🎞️ GIF showing animated proximity events and vessel trajectories
 │
-├── notebooks/                      # 📁 Jupyter notebooks
-│   └── maritime_collision_map.ipynb
+├── notebooks/                          # 📁 Jupyter notebooks
+│   ├── 01_maritime_collision_map.ipynb        # 📓 Initial map visualization with static data
+│   └── 02_animated_proximity_event_map.ipynb  # 📓 Animated proximity event visualization with vessel trajectories and collision event
 │
-├── maritime_collision_visual_map.html  # 🌍 Standalone interactive map
-├── .gitignore                     # 🙈 Ignore files for Git
-├── LICENSE                        # 📄 Open source license
+├── maritime_collision_visual_map.html  # 🌍 Standalone interactive map output
+├── .gitignore                     # 🙈 Files to ignore in Git
+├── LICENSE                        # 📄 Open source license (e.g., MIT or Creative Commons)
 ├── README.md                      # 📘 Project documentation
-└── requirements.txt               # 📦 Python dependencies
+└── requirements.txt               # 📦 Python dependencies for the project
+
 ```
 
 ---
 
 ## 🌐 Attribution
 
-Synthetic AIS Dataset of Vessel Proximity Events provided by the CREXDATA Project, funded by the European Union’s Horizon Europe Programme (Grant agreement No. 101092749).  
+**Synthetic AIS Dataset of Vessel Proximity Events** provided by the CREXDATA – Critical Action Planning over Extreme-Scale Data Project, funded by the European Union’s Horizon Europe Programme (Grant agreement No. 101092749). 
 
+Ilias Chamatidis, Giannis Spiliopoulos, Manolis Kaliorakis, Georgios Grigoropoulos, & Konstantina Bereta. (2023). Synthetic AIS Dataset of Vessel Proximity Events (1.0) [Data set]. Zenodo.  
 🔗 DOI: [10.5281/zenodo.8358664](http://dx.doi.org/10.5281/zenodo.8358664)  
 📍 Aegean Sea – Simulated collision trajectories for maritime safety modeling  
 📊 213 vessels, 237 proximity events, ~4600 AIS messages  
