@@ -82,8 +82,8 @@ AIS-Vessel-Proximity-Detection-Map-Aegean-Sea/
 │
 ├── maritime_collision_visual_map.html  # 🌍 Standalone interactive map output
 ├── .gitignore                     # 🙈 Files to ignore in Git
-├── LICENSE                        # 📄 Open source license (e.g., MIT or Creative Commons)
-├── README.md                      # 📘 Project documentation
+├── LICENSE                        # 📄 Open source license
+├── README.md                      # 📘 You are here!
 └── requirements.txt               # 📦 Python dependencies for the project
 
 ```
