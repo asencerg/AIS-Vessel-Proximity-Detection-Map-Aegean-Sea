@@ -7,9 +7,11 @@
 
 ## Overview
 
-An interactive geospatial analytics project that visualizes simulated vessel collision proximity (near-collision) events using synthetic AIS (Automatic Identification System) data derived from real-world maritime activity. Using Folium, the system maps vessel trajectories in the Aegean Sea and highlights high-risk proximity encounters with geospatial routes and warning markers.
+An interactive geospatial analytics project exploring synthetic vessel proximity (near-collision) events using AIS (Automatic Identification System) data modeled on real-world maritime behavior. The map visualizes vessel trajectories in the Aegean Sea and highlights simulated high-risk encounters based on spatial and temporal convergence.
 
-This open-source project is designed to showcase geospatial data engineering skills in maritime analytics and interactive map development.
+As vessel traffic intensifies in constrained or geopolitically sensitive regions, proximity detection and maritime situational awareness have become critical topics in logistics safety, environmental risk, and regional stability. This project demonstrates how open synthetic AIS data and spatial visualization tools can be used to support exploratory analysis of maritime traffic patterns and potential collision scenarios.
+
+Built using Python and Folium, the system combines lightweight geospatial mapping with timestamped proximity markers and animated replay of selected high-risk encounters.
 
 ---
 
