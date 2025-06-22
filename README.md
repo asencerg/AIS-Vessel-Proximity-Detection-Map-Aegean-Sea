@@ -1,4 +1,4 @@
-# 🛰️ Geospatial Modeling of Vessel Proximity Risk with Synthetic AIS Data 🌊🚢  
+# 📡🛰️ Geospatial Modeling of Vessel Proximity Risk with Synthetic AIS Data 🌊🚢  
 *A Geospatial intelligence project exploring near-collision vessel events using Python, synthetic AIS data, and lightweight risk modeling.*
 
 ---
@@ -7,13 +7,13 @@
 
 ## Overview
 
-An interactive geospatial analytics project exploring synthetic vessel proximity (near-collision) events using AIS (Automatic Identification System) data modeled on real-world maritime behavior. The map visualizes vessel trajectories in the Aegean Sea and highlights simulated high-risk encounters based on spatial and temporal convergence.
+This project investigates **vessel proximity risk** using synthetic AIS (Automatic Identification System) data derived from real-world maritime patterns. Focusing on the Aegean Sea, it simulates near-collision events and visualizes them through interactive maps, spatial risk models, and animated replays.
 
-As vessel traffic intensifies in constrained or geopolitically sensitive regions, proximity detection and maritime situational awareness have become critical topics in logistics safety, environmental risk, and regional stability. This project demonstrates how open synthetic AIS data and spatial visualization tools can be used to support exploratory analysis of maritime traffic patterns and potential collision scenarios.
+As maritime traffic intensifies—particularly in geopolitically sensitive or operationally constrained regions—understanding convergence patterns between vessels becomes critical for safety, logistics resilience, and policy awareness.
 
-By combining timestamped AIS tracks with proximity logic, it identifies and classifies near-collision risks based on spatiotemporal thresholds. The output includes interactive maps, risk-ranked events, and spatial heatmaps, designed to support maritime situational awareness, safety, and analytics innovation.
+Using Python and open geospatial tools, the project applies **spatiotemporal proximity logic** to classify risk levels based on vessel distance and timing.
 
-Built using Python and Folium, the system combines lightweight geospatial mapping and risk modeling with timestamped proximity markers and animated replay of selected high-risk encounters.
+The work demonstrates how **open data and lightweight modeling** can inform **maritime situational awareness and operational decision-making**.
 
 ---
 
