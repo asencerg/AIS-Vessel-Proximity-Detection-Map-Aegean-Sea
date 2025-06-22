@@ -9,9 +9,9 @@
 
 An interactive geospatial analytics project exploring synthetic vessel proximity (near-collision) events using AIS (Automatic Identification System) data modeled on real-world maritime behavior. The map visualizes vessel trajectories in the Aegean Sea and highlights simulated high-risk encounters based on spatial and temporal convergence.
 
-By combining timestamped AIS tracks with proximity logic, it identifies and classifies near-collision risks using distance and timing thresholds. The output includes interactive maps, risk-ranked events, and spatial heatmaps, designed to support maritime situational awareness, safety, and analytics innovation.
-
 As vessel traffic intensifies in constrained or geopolitically sensitive regions, proximity detection and maritime situational awareness have become critical topics in logistics safety, environmental risk, and regional stability. This project demonstrates how open synthetic AIS data and spatial visualization tools can be used to support exploratory analysis of maritime traffic patterns and potential collision scenarios.
+
+By combining timestamped AIS tracks with proximity logic, it identifies and classifies near-collision risks using distance and timing thresholds. The output includes interactive maps, risk-ranked events, and spatial heatmaps, designed to support maritime situational awareness, safety, and analytics innovation.
 
 Built using Python and Folium, the system combines lightweight geospatial mapping and risk modeling with timestamped proximity markers and animated replay of selected high-risk encounters.
 
@@ -26,6 +26,8 @@ Built using Python and Folium, the system combines lightweight geospatial mappin
 - ⚓ **Minimalistic base map** using CartoDB Positron tiles for clarity
 - 💡 **Lightweight route dots** (not markers) for scalability and performance
 - 📁 **All routes** exported to a single `HTML` map, fully interactive offline
+- 📊 **Rule-based risk modeling** with distance + time gap classification  
+- 🧠 **Risk heatmap** showing spatial density of high/medium-risk encounters  
 - 🎞️ **Animated proximity event GIF** showing vessel trajectories, collision course, and timestamps
 
 ![Maritime Collision Visualizer](images/screenshot_proximity_event_1.png)
@@ -63,6 +65,20 @@ Built using Python and Folium, the system combines lightweight geospatial mappin
 ![Maritime Collision Visualizer](images/vessels_11_12_proximity.gif)
 ---
 
+## 🧠 Risk Modeling Logic
+
+Using distance and time gap thresholds, proximity events are classified into four levels:
+
+| Risk Level | Distance (NM) | Time Gap (sec) |
+|------------|----------------|----------------|
+| High       | < 0.5          | < 60           |
+| Medium     | < 1.0          | < 120          |
+| Low        | < 2.0          | < 300          |
+| Very Low   | ≥ 2.0          | ≥ 300          |
+
+![Maritime Collision Risk Heatmap](images/screenshot_risk_heatmap.png)
+---
+
 ## 📁 Project Structure
 
 ```plaintext
@@ -72,21 +88,28 @@ AIS-Vessel-Proximity-Detection-Map-Aegean-Sea/
 │   ├── vessel_positions.csv                   # 📊 Vessel position data
 │   └── simulated_vessel_proximity_events.csv  # 📊 Simulated proximity event data
 │
-├── images/                             # 📁 Screenshots and GIFs for visualizations
-│   ├── screenshot_proximity_event_1.png  # 📸 Screenshot 1 of proximity event map
-│   ├── screenshot_proximity_event_2.png  # 📸 Screenshot 2 of proximity event map
-│   ├── screenshot_proximity_events.png   # 📸 Screenshot of multiple proximity events
-│   └── vessels_11_12_proximity.gif       # 🎞️ GIF showing animated proximity events and vessel trajectories
+├── images/                             # 📁 Screenshots and animations
+│   ├── screenshot_proximity_event_1.png       # 📸 Single proximity marker
+│   ├── screenshot_proximity_event_2.png       # 📸 Alternative event view
+│   ├── screenshot_proximity_events.png        # 📸 Overview of multiple events
+│   ├── vessels_11_12_proximity.gif            # 🎞️ Animated near-collision replay
+│   └── screenshot_risk_heatmap.png            # 📸 Heatmap of high-risk areas
 │
 ├── notebooks/                          # 📁 Jupyter notebooks
-│   ├── 01_maritime_collision_map.ipynb        # 📓 Initial map visualization with static data
-│   └── 02_animated_proximity_event_map.ipynb  # 📓 Animated proximity event visualization with vessel trajectories and collision event
+│   ├── 01_maritime_collision_map.ipynb        # 📓 Static map of vessel trajectories
+│   ├── 02_animated_proximity_event_map.ipynb  # 📓 Animated event replay (GIF output)
+│   └── 03_proximity_risk_modeling.ipynb       # 🧠 Risk classification + heatmap modeling
 │
-├── maritime_collision_visual_map.html  # 🌍 Standalone interactive map output
-├── .gitignore                     # 🙈 Files to ignore in Git
-├── LICENSE                        # 📄 Open source license
-├── README.md                      # 📘 You are here!
-└── requirements.txt               # 📦 Python dependencies for the project
+├── outputs/                            # 📁 Model outputs (generated programmatically)
+│   ├── proximity_risk_events.csv             # 📄 Table of classified proximity risks
+│   ├── proximity_risk_map.html               # 🌍 Interactive marker map (by risk level)
+│   └── proximity_risk_heatmap.html           # 🔥 Spatial heatmap of medium/high risk
+│
+├── maritime_collision_visual_map.html  # 🌍 Offline interactive base map (01)
+├── .gitignore                          # 🙈 Ignore list for Git versioning
+├── LICENSE                             # 📄 Open source license
+├── README.md                           # 📘 You are here!
+└── requirements.txt                    # 📦 Python package dependencies
 
 ```
 
