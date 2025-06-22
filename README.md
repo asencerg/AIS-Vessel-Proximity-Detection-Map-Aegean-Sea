@@ -1,5 +1,5 @@
-# Maritime Collision Visualizer 🌊🚢  
-*A Geospatial Visualization of Synthetic AIS Proximity Events Using Python & Folium*
+# 🛰️ Geospatial Modeling of Maritime Proximity Risk with Synthetic AIS Data 🌊🚢  
+*A Geospatial intelligence project exploring near-collision vessel events using Python, synthetic AIS data, and lightweight risk modeling.*
 
 ---
 ![Maritime Collision Visualizer](images/screenshot_proximity_events.png)
@@ -9,9 +9,11 @@
 
 An interactive geospatial analytics project exploring synthetic vessel proximity (near-collision) events using AIS (Automatic Identification System) data modeled on real-world maritime behavior. The map visualizes vessel trajectories in the Aegean Sea and highlights simulated high-risk encounters based on spatial and temporal convergence.
 
+By combining timestamped AIS tracks with proximity logic, it identifies and classifies near-collision risks using distance and timing thresholds. The output includes interactive maps, risk-ranked events, and spatial heatmaps, designed to support maritime situational awareness, safety, and analytics innovation.
+
 As vessel traffic intensifies in constrained or geopolitically sensitive regions, proximity detection and maritime situational awareness have become critical topics in logistics safety, environmental risk, and regional stability. This project demonstrates how open synthetic AIS data and spatial visualization tools can be used to support exploratory analysis of maritime traffic patterns and potential collision scenarios.
 
-Built using Python and Folium, the system combines lightweight geospatial mapping with timestamped proximity markers and animated replay of selected high-risk encounters.
+Built using Python and Folium, the system combines lightweight geospatial mapping and risk modeling with timestamped proximity markers and animated replay of selected high-risk encounters.
 
 ---
 
