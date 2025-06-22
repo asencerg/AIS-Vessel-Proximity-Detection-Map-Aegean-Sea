@@ -132,3 +132,10 @@ Ilias Chamatidis, Giannis Spiliopoulos, Manolis Kaliorakis, Georgios Grigoropoul
 
 [MIT License](LICENSE)
 
+---
+
+## 🙋‍♂️ About
+
+Created by **A. Sencer Gözübenli**  
+Data Engineer  
+*Focusing on maritime analytics, geospatial risk modeling, and data-informed decision systems.*
