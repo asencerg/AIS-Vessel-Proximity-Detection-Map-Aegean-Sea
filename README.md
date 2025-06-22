@@ -138,4 +138,4 @@ Ilias Chamatidis, Giannis Spiliopoulos, Manolis Kaliorakis, Georgios Grigoropoul
 
 Created by **A. Sencer Gözübenli**  
 Data Engineer  
-*Focusing on maritime analytics, geospatial risk modeling, and data-informed decision systems.*
+*Focusing on supply chain analytics, geospatial risk modeling, and data-informed decision systems.*
