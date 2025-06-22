@@ -11,7 +11,7 @@ An interactive geospatial analytics project exploring synthetic vessel proximity
 
 As vessel traffic intensifies in constrained or geopolitically sensitive regions, proximity detection and maritime situational awareness have become critical topics in logistics safety, environmental risk, and regional stability. This project demonstrates how open synthetic AIS data and spatial visualization tools can be used to support exploratory analysis of maritime traffic patterns and potential collision scenarios.
 
-By combining timestamped AIS tracks with proximity logic, it identifies and classifies near-collision risks using distance and timing thresholds. The output includes interactive maps, risk-ranked events, and spatial heatmaps, designed to support maritime situational awareness, safety, and analytics innovation.
+By combining timestamped AIS tracks with proximity logic, it identifies and classifies near-collision risks based on spatiotemporal thresholds. The output includes interactive maps, risk-ranked events, and spatial heatmaps, designed to support maritime situational awareness, safety, and analytics innovation.
 
 Built using Python and Folium, the system combines lightweight geospatial mapping and risk modeling with timestamped proximity markers and animated replay of selected high-risk encounters.
 
