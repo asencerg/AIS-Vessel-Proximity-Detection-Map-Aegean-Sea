@@ -1,4 +1,4 @@
-# 🛰️ Geospatial Modeling of Maritime Proximity Risk with Synthetic AIS Data 🌊🚢  
+# 🛰️ Geospatial Modeling of Vessel Proximity Risk with Synthetic AIS Data 🌊🚢  
 *A Geospatial intelligence project exploring near-collision vessel events using Python, synthetic AIS data, and lightweight risk modeling.*
 
 ---
