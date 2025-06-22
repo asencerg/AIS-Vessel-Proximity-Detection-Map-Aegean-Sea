@@ -9,7 +9,7 @@
 
 This project investigates **vessel proximity risk** using synthetic AIS (Automatic Identification System) data derived from real-world maritime patterns. Focusing on the Aegean Sea, it simulates near-collision events and visualizes them through interactive maps, spatial risk models, and animated replays.
 
-As maritime traffic intensifies—particularly in geopolitically sensitive or operationally constrained regions—understanding convergence patterns between vessels becomes critical for safety, logistics resilience, and policy awareness.
+As maritime traffic intensifies, particularly in geopolitically sensitive or operationally constrained regions, understanding convergence patterns between vessels becomes critical for safety, logistics resilience, and policy awareness.
 
 Using Python and open geospatial tools, the project applies **spatiotemporal proximity logic** to classify risk levels based on vessel distance and timing.
 
