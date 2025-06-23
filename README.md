@@ -92,11 +92,12 @@ AIS-Vessel-Proximity-Detection-Map-Aegean-Sea/
 │   └── simulated_vessel_proximity_events.csv  # 📊 Simulated proximity event data
 │
 ├── images/                             # 📁 Screenshots and animations
-│   ├── screenshot_proximity_event_1.png       # 📸 Single proximity marker
-│   ├── screenshot_proximity_event_2.png       # 📸 Alternative event view
-│   ├── screenshot_proximity_events.png        # 📸 Overview of multiple events
-│   ├── vessels_11_12_proximity.gif            # 🎞️ Animated near-collision replay
-│   └── screenshot_risk_heatmap.png            # 📸 Heatmap of high-risk areas
+│   ├── Ships_Waiting_on_the_Singapore_Strait.jpg       # 📸 Banner image
+│   ├── screenshot_proximity_event_1.png                # 📸 Single proximity marker
+│   ├── screenshot_proximity_event_2.png                # 📸 Alternative event view
+│   ├── screenshot_proximity_events.png                 # 📸 Overview of multiple events
+│   ├── vessels_11_12_proximity.gif                     # 🎞️ Animated near-collision replay
+│   └── screenshot_risk_heatmap.png                     # 📸 Heatmap of high-risk areas
 │
 ├── notebooks/                          # 📁 Jupyter notebooks
 │   ├── 01_maritime_collision_map.ipynb        # 📓 Static map of vessel trajectories
