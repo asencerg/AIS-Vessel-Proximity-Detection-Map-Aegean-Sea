@@ -2,7 +2,8 @@
 *A Geospatial intelligence project exploring near-collision vessel events using Python, synthetic AIS data, and lightweight risk modeling.*
 
 ---
-![Maritime Collision Visualizer](images/screenshot_proximity_events.png)
+![Maritime Collision Visualizer](images/Ships_Waiting_on_the_Singapore_Strait.jpg)
+##### *Ships Waiting on the Singapore Strait. PC: Corey Seeman*
 ---
 
 ## Overview
@@ -15,6 +16,8 @@ Using Python and open geospatial tools, the project applies **spatiotemporal pro
 
 The work demonstrates how **open data and lightweight modeling** can inform **maritime situational awareness and operational decision-making**.
 
+---
+![Maritime Collision Visualizer](images/screenshot_proximity_events.png)
 ---
 
 ## 📌 Features
